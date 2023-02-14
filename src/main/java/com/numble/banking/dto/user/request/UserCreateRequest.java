@@ -8,6 +8,8 @@ public class UserCreateRequest {
 
     private String userPassword;
 
+    private String checkUserPassword;
+
 
     public String getName() {
         return name;
@@ -19,5 +21,9 @@ public class UserCreateRequest {
 
     public String getUserPassword() {
         return userPassword;
+    }
+
+    public String getCheckUserPassword() {
+        return checkUserPassword;
     }
 }

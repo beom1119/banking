@@ -53,7 +53,7 @@ public class User {
 
         if (StringUtils.isEmpty(name) || StringUtils.isEmpty(number) || StringUtils.isEmpty(userId) || StringUtils.isEmpty(userPassword))
         {
-            log.info("입력 확인 필요");
+            log.info("이름: "+name+" 번호: "+number+" ID: "+userId+" PW: "+userPassword);
             throw new IllegalArgumentException(String.format("잘못된 입력입니다."));
         }
         this.name = name;
