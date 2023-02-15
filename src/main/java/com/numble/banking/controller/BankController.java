@@ -3,6 +3,7 @@ package com.numble.banking.controller;
 
 import com.numble.banking.dto.user.request.UserCreateRequest;
 import com.numble.banking.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

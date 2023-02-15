@@ -26,4 +26,12 @@ public class UserCreateRequest {
     public String getCheckUserPassword() {
         return checkUserPassword;
     }
+
+    //TEST CODE
+    public UserCreateRequest(String name, String userId, String userPassword, String checkUserPassword) {
+        this.name = name;
+        this.userId = userId;
+        this.userPassword = userPassword;
+        this.checkUserPassword = checkUserPassword;
+    }
 }
