@@ -25,6 +25,10 @@ class UserServiceTest {
 
         //when
 
+        if (!userCreateRequest1.getUserPassword().equals(userCreateRequest1.getCheckUserPassword()))
+        {
+            System.out.printf("틀림");
+        }
 
 
         //then
