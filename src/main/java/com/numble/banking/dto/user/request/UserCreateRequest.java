@@ -1,7 +1,10 @@
 package com.numble.banking.dto.user.request;
 
+import javax.validation.constraints.NotBlank;
+
 public class UserCreateRequest {
 
+    @NotBlank(message = "name 빈 값 불가능")
     private String name;
 
     private String userId;
