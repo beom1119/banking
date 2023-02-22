@@ -1,14 +1,10 @@
-package com.numble.banking.controller;
+package com.numble.banking.bank.controller;
 
 
-import com.numble.banking.dto.user.request.UserCreateRequest;
-import com.numble.banking.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.numble.banking.bank.dto.user.request.UserCreateRequest;
+import com.numble.banking.bank.service.UserService;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class BankController {
@@ -20,7 +16,7 @@ public class BankController {
         this.userService = userService;
     }
 
-    @GetMapping("/test")
+    @GetMapping("/test1")
     public String test()
     {
         return "hello";
@@ -34,6 +30,7 @@ public class BankController {
     }
 
     @PostMapping("/jointest")
+    @ExceptionHandler(IllegalArgumentException.class)
     public String jointest(@RequestBody @Validated UserCreateRequest userCreateRequest)
     {
         userService.join(userCreateRequest);

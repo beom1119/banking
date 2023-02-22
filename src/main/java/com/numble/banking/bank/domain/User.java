@@ -1,4 +1,4 @@
-package com.numble.banking.domain;
+package com.numble.banking.bank.domain;
 
 
 import lombok.extern.slf4j.Slf4j;

@@ -1,8 +1,8 @@
-package com.numble.banking.service;
+package com.numble.banking.bank.service;
 
-import com.numble.banking.domain.User;
-import com.numble.banking.domain.UserRepository;
-import com.numble.banking.dto.user.request.UserCreateRequest;
+import com.numble.banking.bank.dto.user.request.UserCreateRequest;
+import com.numble.banking.bank.domain.User;
+import com.numble.banking.bank.domain.UserRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

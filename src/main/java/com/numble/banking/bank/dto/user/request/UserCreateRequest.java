@@ -1,4 +1,4 @@
-package com.numble.banking.dto.user.request;
+package com.numble.banking.bank.dto.user.request;
 
 import javax.validation.constraints.NotBlank;
 

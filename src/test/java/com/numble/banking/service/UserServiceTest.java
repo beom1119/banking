@@ -1,12 +1,10 @@
 package com.numble.banking.service;
 
-import com.numble.banking.domain.User;
-import com.numble.banking.dto.user.request.UserCreateRequest;
+import com.numble.banking.bank.dto.user.request.UserCreateRequest;
+import com.numble.banking.bank.service.UserService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 class UserServiceTest {
