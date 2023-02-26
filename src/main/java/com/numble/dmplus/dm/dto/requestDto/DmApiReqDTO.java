@@ -14,6 +14,7 @@ import javax.validation.constraints.NotNull;
 
 @Getter
 @ToString
+@NoArgsConstructor
 public class DmApiReqDTO {
 
     @Valid
@@ -112,6 +113,7 @@ public class DmApiReqDTO {
     @ToString
     public static class BuyerDTO
     {
+        @NotBlank(message = "빈칸 금지")
         private String name;
 
         @Email

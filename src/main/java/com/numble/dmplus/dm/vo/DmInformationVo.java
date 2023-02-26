@@ -1,5 +1,8 @@
 package com.numble.dmplus.dm.vo;
 
+
+
+
 public class DmInformationVo {
 
     private String dmUsed="Y";

@@ -8,6 +8,7 @@ class DmPlusApplicationTests {
 
 	@Test
 	void contextLoads() {
+		System.out.printf("hello");
 	}
 
 }
